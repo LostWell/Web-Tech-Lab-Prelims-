@@ -1,23 +1,242 @@
-/*
 body{
-    padding: 0px;
-    margin: 0px;
+    background-color: #f1f2ee;
+}
+
+@font-face{
+    font-family: Simplifica;
+    src: url(fonts/SIMPLIFICA.ttf);
+}
+
+@font-face{
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face{
+    font-family: Raleway;
+    src: url(fonts/Raleway-Regular.ttf);
 }
 
 #navbar{
+    position: static;
+    overflow: hidden;
     width:100%;
-    height:40px;
-    background-color: firebrick;
-    padding: 10px 0px 0px 20px;
+    top: 0;
+    height: auto;
+    background-color: #787879;
+    box-shadow: 10px 10px 10px #b7b7b7;
 }
 
 #design{
-    width: 100%;
-    height: 40px;
+    overflow: hidden;
+    float: left;
+    padding: 10px 5px 0px 10px;
 }
 
 #logo{
+    float: left;
     margin: 0px 0px 0px 0px;
-    color: aliceblue;
+}
+
+
+#navbar a{    
+    float: left;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    color: #dcf763;
+    font-family: Raleway-Bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navbar a:hover{
+    background-color: #435058;
+    color: #f1f2ee;
+}
+
+/*
+#navbar a:not(#Cleanliness):not(#NoiseManagement):not(#SmokePollution):not(#About){
+    opacity: 0;
 }
 */
+
+#enviProtection{
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#enviHeader{
+    margin: 0 auto;
+    font-family: Raleway-Bold;
+    font-size: 30px;
+    color: #787879;
+}
+
+#cleanlinessHeader{
+    width: 98%;
+    margin: 0 auto;
+    background-color: #787879;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    font-family: Raleway-Bold;
+    font-size: 25px;
+    color: #dcf763;
+}
+
+#trash{
+    margin: 0 auto;
+    width: 97%;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    border: 3px solid #787879;
+}
+
+#trashHeader{
+    font-size: 20px;
+    font-family: Raleway-Bold;
+    border-bottom: 2px solid #787879;
+    background-color: #787879;
+    color: #dcf673;
+    border: 2px solid #787879;
+}
+
+#trashParagraph{
+    font-family: Simplifica;
+    font-size: 30px;
+}
+
+/*
+#trashIMG
+*/
+
+#linis{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 97%;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    border: 3px solid #787879;
+}
+
+#linisHeader{
+    font-size: 20px;
+    font-family: Raleway-Bold;
+    border-bottom: 2px solid #787879;
+    background-color: #787879;
+    color: #dcf673;
+    border: 2px solid #787879;
+}
+
+#linisParagraph{
+    font-family: Simplifica;
+    font-size: 30px; 
+}
+
+/*
+#linisIMG
+*/
+
+
+#noiseHeader{
+    width: 98%;
+    margin: 0 auto;
+    background-color: #787879;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    font-family: Raleway-Bold;
+    font-size: 25px;
+    color: #dcf763;
+}
+
+#noiseParagraph{
+    width: 97%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    border: 3px solid #787879;
+    font-family: Simplifica;
+    font-size: 30px; 
+}
+
+#smokeHeader{
+    width: 98%;
+    margin: 0 auto;
+    background-color: #787879;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    font-family: Raleway-Bold;
+    font-size: 25px;
+    color: #dcf763;
+}
+
+#smokeParagraph{
+    width: 97%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    border: 3px solid #787879;
+    font-family: Simplifica;
+    font-size: 30px; 
+}
+
+#speechHeader{
+    width: 98%;
+    margin: 0 auto;
+    background-color: #787879;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    font-family: Raleway-Bold;
+    font-size: 25px;
+    color: #dcf763;
+}
+
+#speechParagraph{
+    width: 97%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    border: 3px solid #787879;
+    font-family: Simplifica;
+    font-size: 30px; 
+}
+
+#bioContainer{
+    margin-top: 15px;
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bioHead{
+    margin: 0 auto;
+    font-family: Raleway-Bold;
+    font-size: 30px;
+    color: #787879;
+}
+
+.infoContainer{
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px #b7b7b7;
+    background-color: #dcf763;
+    transition: 0.3s;
+    height: 450px;
+    width: 450px;;
+    margin-top: 5px;
+    border: 2px solid #787879;
+    border-radius: 10px;
+}
+
+.infoContainer .imgContainer{
+    padding: 7px;
+}
+
+.infoContainer h3{
+    font-size: 25px;
+    font-family: Raleway-Bold;
+    color: #787879;
+}
+
+.infoContainer p{
+    font-family: Simplifica;
+    font-size: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#footer{
+    font-family: Simplifica;
+    font-size: 20px;
+}
