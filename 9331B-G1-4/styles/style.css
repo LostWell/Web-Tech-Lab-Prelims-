@@ -61,11 +61,9 @@ body{
     color: black;
 }
 
-/*
-#navbar a:not(#Cleanliness):not(#NoiseManagement):not(#SmokePollution):not(#About){
-    opacity: 0;
+#navbar a:not(#Cleanliness):not(#NoiseManagement):not(#SmokePollution):not(#About{
+    display: none;
 }
-*/
 
 #enviProtection{
     width: 98%;
@@ -218,8 +216,8 @@ body{
     margin: 0 auto;
     text-align: center;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
 }
 
 #bioHead{
@@ -228,10 +226,10 @@ body{
     text-transform: uppercase;
     font-size: 30px;
     color: black;
-    grid-column: 1/4;
 }
 
 .infoContainer{
+    display: inline
     margin: 1vh;
     box-shadow: 10px 10px 10px #918f8f;
     background-color: ghostwhite;
