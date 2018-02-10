@@ -1,5 +1,6 @@
 body{
     background-color: #b7b7b7;
+    margin: 0px;
 }
 
 @font-face{
@@ -26,10 +27,8 @@ body{
     position: static;
     overflow: hidden;
     width:100%;
-    top: 0;
     height: auto;
-    background-color: black;
-    box-shadow: 10px 10px 10px #918f8f;
+    padding: 20px 0px 10px 50px;
 }
 
 #design{
@@ -46,27 +45,23 @@ body{
 
 #navbar a{    
     float: left;
-    display: inline-block;
-    text-align: center;
-    padding: 20px 50px 20px 50px;
-    color: white;
-    font-family: OratorStd;
+    color: #C0C0C0;
+    font-family: OratorSTD;
     text-decoration: none;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    transition-duration: 0.5S;
+    margin: 20px 0px 0px 40px;
 }
 
 #navbar a:hover{
-    background-color: white;
-    color: black;
+    color: #FFFFFF;
 }
-
-#navbar a:not(#Cleanliness):not(#NoiseManagement):not(#SmokePollution):not(#About{
-    display: none;
+#navbar a:not(#Cleanliness):not(#NoiseManagement):not(#SmokePollution):not(#About){
+    
 }
 
 #enviProtection{
-    width: 98%;
     margin: 0 auto;
     text-align: center;
 }
@@ -80,15 +75,28 @@ body{
     text-shadow: 5px 5px 5px #918f8f;
 }
 
+#enviHeader h1{
+    display: none;
+}
+
+#header{
+    background-image: url(../images/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 980px;
+    margin: -90px 0px 0px 0px;
+}
+
 #cleanlinessHeader{
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     background-color: black;
     box-shadow: 10px 10px 10px #918f8f;
-    font-family: OratorStd;
-    text-transform: uppercase;
+    font-family: WalbaumReg;
     font-size: 35px;
     color: white;
+    
 }
 
 #trash{
@@ -114,9 +122,15 @@ body{
     padding: 0 10px 0 10px;
 }
 
-/*
-#trashIMG
-*/
+#trashIMG {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+}
+
+#trashIMG .imgContainer{
+    padding: 5pxl
+}
 
 #linis{
     margin: 0 auto;
@@ -229,7 +243,6 @@ body{
 }
 
 .infoContainer{
-    display: inline
     margin: 1vh;
     box-shadow: 10px 10px 10px #918f8f;
     background-color: ghostwhite;
