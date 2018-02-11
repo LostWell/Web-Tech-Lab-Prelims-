@@ -111,12 +111,12 @@ ul {
 
 #overlay{
     position: absolute;
-    top: 0;
+    top: 20%;
     bottom: 0;
     left: 0;
     right: 0;
     height: 75%;
-    width: 135%;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #4C787E;
@@ -133,36 +133,37 @@ ul {
 }
 
 #layer1 {
-    width:60%;
-    float:left;
-    margin:0;
+    display: flex;
+    flex-flow: row-nowrap; 
+    justify-content: space-between;
+    width:90%;
+    //float:left;
+    margin:0 auto;
     clear:none;
 }
 
 
 #layer2 {
-    width:40%;
-    float:right;
-    margin:0;
+    width:90%;
+    //float:right;
+    margin:0 auto;
     clear:none;
 }
 
-
 #layer1 .container{
-    float:right;
+    margin: 0 auto;
 }
 
 #layer2 .container{
-    float:left;
+    margin: 0 auto;
 }
 
 .container {
-  float:left;
   position: relative;
   width: 290px;
   height:390px;
-  margin:3px;
-  padding:2%;
+  //margin:0px 15px;
+  //padding:2%;
 }
 
 .container > img{
@@ -192,11 +193,20 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 75%;
-  width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #4C787E;
+}
+
+#approaches .overlay {
+    background-color: #4c787e;
+    height: 80%;
+    width: 110%
+}
+
+#about .overlay{
+    background-color: #c2dfff;
+    height: 80%
+    width:  150%;
 }
 
 .container:hover .overlay {
@@ -207,10 +217,18 @@ ul {
   color: black;
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+}
+
+#about .text{
+    top: 10%;
+    margin: 0 15px;
+}
+
+#approaches .text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .text a{
@@ -220,12 +238,7 @@ ul {
 
 .article p{
     color: #151b54; 
-    font-size: 12px;
-}
-
-.article p:hover{
-    font-size: 16px;
-    text-align:center;
+    font-size: 20px;
 }
 
 #about{
@@ -238,6 +251,12 @@ ul {
     text-align: center;
     color: #87afc7;
     font-size: 50px;
+}
+
+#about > #layer2{
+    display: flex;
+    flex-flow: row-nowrap;
+    justify-content: space-between;
 }
 
 .article-container{
@@ -349,17 +368,12 @@ h3{
     font-family: "Courier New",Courier,monospace;
 }
 
-.container h3{
-
-}
-
 #footer {
   position: static;
   clear:both;
   background:  #5E7D7E;
   color: white;
   padding: 5px 0 10px 0;
-
 }
 
 #footer p {
