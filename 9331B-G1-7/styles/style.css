@@ -16,6 +16,7 @@ body{
     height: auto;
     background-color: #5E7D7E;
     box-shadow: 10px 10px 10px #918f8f;
+    z-index: 5;
 }
 
 #navigation a{    
@@ -50,7 +51,7 @@ ul {
 
 #home{
     height:100vh;
-    background:url("") center center no-repeat scroll;
+    background:url("../images/home.png") center center no-repeat scroll;
     background-size:100% 100%;
     margin-top:0px;
 }
@@ -66,7 +67,7 @@ ul {
 
 .container > img{
     width: 290px;
-    height: 300px;
+    height: 290px;
 }
 
 #approaches p{
@@ -138,12 +139,14 @@ ul {
     clear:none;
 }
 
+
 #layer2 {
     width:40%;
     float:right;
     margin:0;
     clear:none;
 }
+
 
 #layer1 .container{
     float:right;
@@ -156,16 +159,16 @@ ul {
 .container {
   float:left;
   position: relative;
-  width: 200px;
-  height:400px;
+  width: 290px;
+  height:390px;
   margin:3px;
   padding:2%;
 }
 
-.container p{
-    font-size: 18px;
+.container > img{
+    width: 300px;
+    height: 300px;
 }
-
 
 .wrap{
      width: 100%;
@@ -174,16 +177,13 @@ ul {
 }
 
 .wrap p{
-    margin-top:10px;
-}
-
-.wrap p{
     font-family:;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     margin: 10px 0px 0px 0px;
     padding: 5% 0 0 0;
     text-align:center;
+    margin-top:10px;
 }
 
 .overlay {
@@ -193,7 +193,7 @@ ul {
   left: 0;
   right: 0;
   height: 75%;
-  width: 135%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #4C787E;
@@ -215,10 +215,17 @@ ul {
 
 .text a{
     text-decoration: none;
+    text-align: center;
 }
 
 .article p{
     color: #151b54; 
+    font-size: 12px;
+}
+
+.article p:hover{
+    font-size: 16px;
+    text-align:center;
 }
 
 #about{
@@ -352,6 +359,7 @@ h3{
   background:  #5E7D7E;
   color: white;
   padding: 5px 0 10px 0;
+
 }
 
 #footer p {
