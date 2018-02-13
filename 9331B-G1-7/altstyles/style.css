@@ -1,3 +1,25 @@
+
+@font-face{
+    font-family: newsfont;
+    src:url(fonts/Cardo//Cardo-Regular.ttf);
+}
+
+@font-face{
+    font-family: newsfontitalic;
+    src:url(fonts/Cardo//Cardo-Italic.ttf);
+}
+
+@font-face{
+    font-family: navigation;
+    src:url(fonts/Cormorant/Cormorant-Regular.ttf);
+}
+
+@font-face{
+    font-family: h3;
+    src:url(fonts/SS/SourceSerifPro-Regular.ttf);
+}
+
+
 body{
     margin: 0;
     overflow-x: hidden;
@@ -5,24 +27,27 @@ body{
 }
 
 #navigation{
-    position: fixed;
+    position: static;
     top: 0;
     width: 100%;
     margin: 0 auto;
     z-index: 50;
-    background-color: green;
+    background-color: #736F6E;
+    opacity: 0.7;
 }
 
     #navigation ul{
         list-style-type: none;
         display: inline-block;
+        float: right;
     }
 
     #navigation a{
         text-decoration: none;
-        color: black;
+        color: #B6B6B4;
         font-size: 20px;
         padding: 10px 15px;
+        font-family: navigation;
     }
 
     #navigation a:hover{
@@ -34,6 +59,10 @@ body{
         vertical-align: middle;
     }
 
+#home{
+    height: 90vh;
+    background: url("../images/home.png") center center no-repeat scroll;
+}
 
 #layer1{
     width: 800px;
@@ -58,6 +87,8 @@ body{
     position: relative;
     width: 600px;
     padding: 5px 10px;
+    font-family: newsfont;
+    font-weight: bold;
 }
 
 .container h3:before {
@@ -79,6 +110,12 @@ body{
       bottom: 0;
     }
 
+.container p{
+    padding: 0 10px 0 15px;
+    text-indent: 20px;
+    font-family: newsfont;
+}
+
 .container img{
     display: none;
 }
@@ -93,11 +130,79 @@ a{
     border: 2px dashed;
     width: 200px;
     text-align: center;
+    font-family: Garadon;
 }
 
 .text p:hover{
     border: 2px solid;
 }
+
+#more h3{
+    font-size: 20px;
+    color: #2B3856;
+    font-weight: bold;
+}
+
+#more a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#more a:hover{
+    color: #2B3856;
+}
+
+#more li{
+    list-style-type: none;
+}
+
+h3{
+    font-size: 20px;
+    font-family: h3;
+    text-align: center;
+}
+
+#cols{
+    display: flex;
+}
+       
+#cols div{  
+    width: 33%;
+}
+    
+#cols img{
+    width: 300px;
+    padding: 9px;
+    transition: .5s ease;
+    border-radius: 30px;
+}
+
+#cols img:hover{
+    width: 330px;
+}
+
+.article-container{
+  margin: 0 auto;
+  height: 80vh;
+  padding: 25px 50px 75px 50px;
+}
+
+.article-statement{
+    font-size: 21px;
+    font-family: newsfontitalic;
+    text-align: center;
+}
+
+.article-main{
+    font-size: 18px;
+    font-family: h3;
+    word-spacing: 5px;
+    padding: 20px 10px 0 10px;
+    text-indent: 25px;
+    line-height: 1.6;
+}
+
 
 #approaches #layer1{
     width: 90%;
@@ -109,25 +214,9 @@ a{
     display: initial;
 }
 
-
-
-
-
-
-
-
-
-
 #media{
     width: 90%;
     margin: 0 auto; 
-}
-
-footer{
-    width: 100%;
-    background-color: blue;
-    padding: 5px;
-    text-align: center;
 }
 
 #media #overlay a{
@@ -138,4 +227,11 @@ footer{
 
 #media #overlay a:hover{
     
+}
+
+footer{
+    width: 100%;
+    background-color: #736F6E;
+    padding: 5px;
+    text-align: center;
 }
