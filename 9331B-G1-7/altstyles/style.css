@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #D1D0CE;
+}
+
+#navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 50;
+    background-color: green;
+}
+
+    #navigation ul{
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    #navigation a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    #navigation a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+    #navigation img{
+        vertical-align: middle;
+    }
+
+
+#layer1{
+    width: 800px;
+    margin: 100px auto 0;
+    background-color: #E5E4E2;
+    padding: 10px 20px;
+    border-radius: 4px 4px 0 0;
+}
+
+#layer2{
+    width: 800px;
+    margin: 0 auto;
+    background-color: #E5E4E2;
+    padding: 10px 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+.container h3{
+    line-height: 1.5em;
+    background-color: #6D7B8D;
+    color: white;
+    position: relative;
+    width: 600px;
+    padding: 5px 10px;
+}
+
+.container h3:before {
+      position: absolute;
+      content: "";
+      border-style: solid;
+      border-width: 25px 15px 0 0;
+      border-color:  #6D7B8D transparent transparent transparent;
+      right: -15px;
+      top: 0;
+    }
+.container h3:after {
+      position: absolute;
+      content: "";
+      border-style: solid;
+      border-width: 25px 0 0 15px;
+      border-color: transparent transparent transparent #6D7B8D;
+      right: -15px;
+      bottom: 0;
+    }
+
+.container img{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text p{
+    margin: 0 auto;
+    color: black;
+    border: 2px dashed;
+    width: 200px;
+    text-align: center;
+}
+
+.text p:hover{
+    border: 2px solid;
+}
+
+#approaches #layer1{
+    width: 90%;
+    
+    background-color: yellow;
+}
+
+#approaches img{
+    display: initial;
+}
+
+
+
+
+
+
+
+
+
+
+#media{
+    width: 90%;
+    margin: 0 auto; 
+}
+
+footer{
+    width: 100%;
+    background-color: blue;
+    padding: 5px;
+    text-align: center;
+}
+
+#media #overlay a{
+    color: black;
+    border-left: 10px solid;
+    transition: .2s ease;
+}
+
+#media #overlay a:hover{
+    
+}
