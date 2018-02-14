@@ -1,23 +1,305 @@
-/*
 body{
-    padding: 0px;
+    background-color: #F0F0F0;
     margin: 0px;
 }
 
+@font-face{
+    font-family: SignikaReg;
+    src: url(fonts/Signika-Regular.ttf);
+}
+
+@font-face{
+    font-family: SignikaBold;
+    src: url(fonts/Signika-Bold.ttf);
+}
+
+@font-face{
+    font-family: SignikaLight;
+    src: url(fonts/Signika-Light.ttf);
+}
+
+@font-face{
+    font-family: Arciform;
+    src: url(fonts/Arciform.otf);
+}
+
+@font-face{
+    font-family: Bavro;
+    src: url(fonts/Bavro-Regular.ttf);
+}
+
 #navbar{
+    position: static;
+    overflow: hidden;
     width:100%;
-    height:40px;
-    background-color: firebrick;
-    padding: 10px 0px 0px 20px;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    background-color: #2b5a7c;
 }
 
 #design{
-    width: 100%;
-    height: 40px;
+    overflow: hidden;
+    float: left;
+    padding: 10px 5px 0px 10px;
 }
 
 #logo{
-    margin: 0px 0px 0px 0px;
-    color: aliceblue;
+    float: left;
+    margin: 0px 0px 0px 20px;
 }
-*/
+
+
+#navbar a{    
+    float: right;
+    color: #b8d433;
+    font-family: SignikaLight;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition-duration: 0.5S;
+    margin: 20px 40px 0px 0px;
+    text-transform: lowercase
+}
+
+#navbar a:hover{
+    color: #dcf763;
+    font-size: 1.24em;
+    text-shadow: 0px 5px 20px #202020;
+}
+
+#navbar a:not(#Cleanliness):not(#NoiseManagement):not(#SmokePollution):not(#About){
+    
+}
+
+#enviProtection{
+    text-align: center;
+}
+
+#enviHeader h1{
+    display: none;
+}
+
+#header{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #2b5a7c;
+    width: auto;
+    height: 688px;
+    margin: 0 auto;
+}
+
+#cleanliness{
+    background-color: #F0F0F0;
+    width: 80%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
+}
+
+#cleanlinessHeader{
+    width: 100%;
+    color: #333333;
+    margin: auto auto -45px auto;
+    padding: 100px 0px 20px 0px;
+    font-family: Arciform;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+#trash, #linis{
+    margin: auto;
+    width: 100%;
+    padding: 20px 0px 200px 0px;
+}
+
+#trashHeader h3, #linisHeader h3{
+    font-size: 22px;
+    font-family: Bavro;
+    color: #8CC63F;
+    text-align: left;
+    text-transform: lowercase;
+    width: 80%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+#trashParagraph, #linisParagraph{
+    font-family: WalbaumReg;
+    font-size: 20px;
+    text-align: justify;
+    width: 80%;
+    margin: -15px auto 10px auto;
+    color: #505050;
+}
+
+#trashIMG, #linisIMG {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+#trashIMG .imgContainer img, #linisIMG .imgContainer img{
+    width: 100%;
+    height: auto;
+    //-webkit-filter: grayscale(100%);
+    //filter: grayscale(100%);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+#trashIMG .imgContainer img:hover, #linisIMG .imgContainer img:hover{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 20px #A0A0A0;
+    -webkit-filter: none;
+    filter: none;
+    box-shadow: 0px 20px 50px #909090;
+    opacity: 1;
+}
+
+#noise{
+    width: 80%;
+    padding: 0px 0px 0px 0px;
+    margin: 120px auto 100px auto;
+}
+
+#noiseHeader{
+    width: 100%;
+    color: #333333;
+    margin: auto auto -20px auto;
+    padding: 0px 0px 0px 0px;
+    font-family: OldEnglish;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+#noiseParagraph{
+    font-family: WalbaumReg;
+    font-size: 20px;
+    text-align: center;
+    color: #505050;
+    width: 80%;
+    margin: auto;
+}
+
+#smoke{
+    width: 80%;
+    padding: 120px 0px 200px 0px;
+    margin: auto;
+}
+
+#smokeHeader{
+    width: 100%;
+    color: #333333;
+    margin: auto auto -22px auto;
+    padding: 10px 0px 0px 0px;
+    font-family: OldEnglish;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+#smokeParagraph{
+    font-family: WalbaumReg;
+    font-size: 20px;
+    text-align: center;
+    color: #505050;
+    width: 80%;
+    margin: 30px auto 30px auto;
+}
+
+#speechHeader{
+    width: 80%;
+    color: #333333;
+    margin: -80px auto 0px auto;
+    padding: 100px 0px 245px 0px;
+    font-family: OldEnglish;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+#speechParagraph{
+    font-size: 20px;
+    text-align: center;
+    color: #505050;
+    width: 65%;
+    margin: -280px auto 300px auto;
+    padding: 0px 0px 0px 0px;
+}
+
+#bioContainer{
+    width: 100%;
+    margin: 200px auto auto auto;
+    text-align: center;
+    background-color: #333333;
+}
+
+#bioHead{
+    margin: 0 auto;
+    font-family: OldEnglish;
+    font-size: 2em;
+    color: #FFFFFF;
+    padding: 80px;
+}
+
+.infoContainer{
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 100px 0px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 0px;
+}
+
+.infoContainer .imgContainer{
+    grid-area: 1 / 1 / span 4 / span 1;
+}
+
+.infoContainer .imgContainer img{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border-radius: 100%;
+    -webkit-filter: (100%);
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.infoContainer .imgContainer img:hover{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border-radius: 100%;
+    -webkit-filter: none;
+    filter: none;
+    box-shadow: 0px 2px 15px #202020;
+}
+
+.infoContainer h3{
+    font-size: 1.5em;
+    font-family: OratorStd;
+    color: #8CC63F;
+    text-align: LEFT;
+    margin: 0px 10px 0px 18px;
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.infoContainer p{
+    font-family: WalbaumReg;
+    font-size: 1.1em;  
+    color: #F0F0F0;
+    text-align: justify;
+    margin: 10px 10px 10px 20px;
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#footer{
+    font-family: OratorStd;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: #404040;
+    text-align: center;
+    color: #FFFFFF;
+}
