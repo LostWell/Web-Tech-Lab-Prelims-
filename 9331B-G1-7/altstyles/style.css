@@ -141,6 +141,7 @@ a{
     font-size: 20px;
     color: #2B3856;
     font-weight: bold;
+    text-align: justify;
 }
 
 #more a{
@@ -204,19 +205,38 @@ h3{
 }
 
 
-#approaches #layer1{
-    width: 90%;
-    
-    background-color: yellow;
+#approaches .container img{
+    display: block;
+    border: 1px;
+    border-radius: 3px;
+    width: 200px;
+    height: 200px;
+    padding: 25px 10px 0 15px;
+    margin: 0 auto;
+    /**DO NOT FORGET TO PUT BACKGROUND COLOR BEHIND IMAGE!!!!**/
 }
 
-#approaches img{
-    display: initial;
+#approaches .text p{
+    width: 150px;
+
+}
+
+#approaches #layer1 .container p{
+   text-align: center;
+}
+
+#approaches #layer2 .container p{
+   text-align: center;
 }
 
 #media{
     width: 90%;
     margin: 0 auto; 
+    background-color: 
+}
+
+#media img{
+    display: none;
 }
 
 #media #overlay a{
@@ -224,6 +244,7 @@ h3{
     border-left: 10px solid;
     transition: .2s ease;
 }
+
 
 #media #overlay a:hover{
     
