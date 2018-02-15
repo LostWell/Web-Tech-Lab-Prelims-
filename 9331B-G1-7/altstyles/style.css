@@ -230,6 +230,12 @@ h3{
 
 #approaches #layer1{
     margin: 0 auto;
+    display: flex;
+    width: 900px;
+}
+
+#approaches #layer2{
+    width: 900px;
 }
 
 #approaches h2{
@@ -242,7 +248,7 @@ h3{
     display: block;
     border: 1px;
     border-radius: 3px;
-    width: 300px;
+    width: 250px;
     height: 200px;
     padding: 15px 15px 15px 15px;
     margin: 10px auto;
@@ -253,6 +259,7 @@ h3{
 #approaches .text p{
     width: 200px;
     border:2px solid;
+    padding: 10px 10px 10px 5px; 
 }
 
 #approaches .text p:hover{
