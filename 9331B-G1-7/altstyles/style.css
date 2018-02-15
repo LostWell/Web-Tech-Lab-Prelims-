@@ -19,6 +19,25 @@
     src:url(fonts/SS/SourceSerifPro-Regular.ttf);
 }
 
+@font-face{
+    font-family: textp;
+    src:url(fonts/Anonymous/AnonymousPro-Regular.ttf);
+}
+
+@font-face{
+    font-family: header;
+    src:url(fonts/Inconsolata/Inconsolata-Regular.ttf);
+}
+
+@font-face{
+    font-family: media;
+    src:url(fonts/Cormorant/Cormorant-Light.ttf);
+}
+
+@font-face{
+    font-family: about;
+    src:url(fonts/Anonymous/AnonymousPro-Italic.ttf);
+}
 
 body{
     margin: 0;
@@ -60,7 +79,7 @@ body{
     }
 
 #home{
-    height: 90vh;
+    height: 100vh;
     background: url("../images/home.png") center center no-repeat scroll;
 }
 
@@ -122,6 +141,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #646D7E;
 }
 
 .text p{
@@ -130,7 +150,7 @@ a{
     border: 2px dashed;
     width: 200px;
     text-align: center;
-    font-family: Garadon;
+    font-family: textp;
 }
 
 .text p:hover{
@@ -147,7 +167,7 @@ a{
 #more a{
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #more a:hover{
@@ -204,6 +224,19 @@ h3{
     line-height: 1.6;
 }
 
+.wrap{
+    background-color: #BCC6CC;
+}
+
+#approaches #layer1{
+    margin: 0 auto;
+}
+
+#approaches h2{
+    font-size: 25px;
+    font-family: header;
+    text-align: center;
+}
 
 #approaches .container img{
     display: block;
@@ -211,14 +244,19 @@ h3{
     border-radius: 3px;
     width: 200px;
     height: 200px;
-    padding: 25px 10px 0 15px;
-    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+    margin: 10px auto;
+    border: 5px solid gray;
     /**DO NOT FORGET TO PUT BACKGROUND COLOR BEHIND IMAGE!!!!**/
 }
 
 #approaches .text p{
-    width: 150px;
+    width: 200px;
+    border:2px solid;
+}
 
+#approaches .text p:hover{
+    border:2px dashed;
 }
 
 #approaches #layer1 .container p{
@@ -230,24 +268,83 @@ h3{
 }
 
 #media{
-    width: 90%;
+    width: 100%;
     margin: 0 auto; 
-    background-color: 
+    background-color: #D1D0CE;
+}
+
+#media #layer1{
+    margin: 0 auto;
+    background-color: #BCC6CC;
+    height: 90vh;
+}
+
+#media h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: header;
+}
+
+#media h2{
+   visibility: hidden;
 }
 
 #media img{
-    display: none;
+    display: static;
+    width: 200px;
+    height: 300px;
 }
 
-#media #overlay a{
-    color: black;
-    border-left: 10px solid;
-    transition: .2s ease;
+#media .container p{
+    visibility: hidden;
 }
 
+#media .article p{
+    visibility: visible;
+    text-align: center;
+    border: 3px solid gray;
+    width: 400px;
+    margin: 0 auto;
+    font-family: media;
+    font-size: 20px;
+    padding: 10px 15px;
+}
 
-#media #overlay a:hover{
-    
+#media a:hover{
+    color: white;
+}
+
+#about #layer1{
+    margin: 0 auto;
+}
+
+#about h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: header;
+}
+
+#about .image{
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    border-radius: 120px;
+    float: right;
+}
+
+#about .article p{
+    width: 300px;
+    padding: 10px 15px 20px 15px;
+}
+
+#about .article p:hover{
+    border: dashed;
+}
+
+#about h3{
+    font-family: about;
+    font-size: 20px;
 }
 
 footer{
@@ -255,4 +352,5 @@ footer{
     background-color: #736F6E;
     padding: 5px;
     text-align: center;
+    font-family: navigation;
 }
