@@ -15,6 +15,12 @@
 }
 
 @font-face{
+    font-family: navigation;
+    src:url(fonts/Cormorant/Cormorant-Italic.ttf);
+}
+
+
+@font-face{
     font-family: h3;
     src:url(fonts/SS/SourceSerifPro-Regular.ttf);
 }
@@ -81,6 +87,8 @@ body{
 #home{
     height: 100vh;
     background: url("../images/home.png") center center no-repeat scroll;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #layer1{
@@ -102,12 +110,12 @@ body{
 .container h3{
     line-height: 1.5em;
     background-color: #6D7B8D;
-    color: white;
+    color: black;
     position: relative;
     width: 600px;
     padding: 5px 10px;
-    font-family: newsfont;
-    font-weight: bold;
+    font-family: about;
+
 }
 
 .container h3:before {
@@ -250,9 +258,9 @@ h3{
     border-radius: 3px;
     width: 250px;
     height: 200px;
-    padding: 15px 15px 15px 15px;
+    //padding: 15px 15px 15px 15px;
     margin: 10px auto;
-    border: 5px solid gray;
+    border: 5px solid black;
     /**DO NOT FORGET TO PUT BACKGROUND COLOR BEHIND IMAGE!!!!**/
 }
 
@@ -283,7 +291,7 @@ h3{
 #media #layer1{
     margin: 0 auto;
     background-color: #BCC6CC;
-    height: 80vh;
+    height: 60vh;
 }
 
 #media h1{
@@ -309,12 +317,16 @@ h3{
 #media .article p{
     visibility: visible;
     text-align: center;
-    border: 3px solid gray;
+    border: 2px solid black;
     width: 400px;
     margin: 0 auto;
     font-family: media;
     font-size: 20px;
     padding: 10px 15px;
+}
+
+#media a{
+     color: #2B3856;
 }
 
 #media a:hover{
@@ -357,7 +369,7 @@ h3{
 footer{
     width: 100%;
     background-color: #736F6E;
-    padding: 5px;
+    padding: 4px;
     text-align: center;
     font-family: navigation;
 }
