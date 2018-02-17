@@ -100,7 +100,7 @@ body{
     color: #333333;
     margin: auto auto -45px auto;
     padding: 100px 0px 20px 0px;
-    font-family: Arciform;
+    font-family: SignikaReg;
     font-size: 50px;
     letter-spacing: 2px;
 }
@@ -113,7 +113,7 @@ body{
 
 #trashHeader h3, #linisHeader h3{
     font-size: 22px;
-    font-family: Bavro;
+    font-family: SignikaLight;
     color: #8CC63F;
     text-align: left;
     text-transform: lowercase;
@@ -123,7 +123,7 @@ body{
 }
 
 #trashParagraph, #linisParagraph{
-    font-family: WalbaumReg;
+    font-family: SignikaLight;
     font-size: 20px;
     text-align: justify;
     width: 80%;
@@ -170,13 +170,13 @@ body{
     color: #333333;
     margin: auto auto -20px auto;
     padding: 0px 0px 0px 0px;
-    font-family: OldEnglish;
+    font-family: SignikaReg;
     font-size: 50px;
     letter-spacing: 2px;
 }
 
 #noiseParagraph{
-    font-family: WalbaumReg;
+    font-family: SignikaLight;
     font-size: 20px;
     text-align: center;
     color: #505050;
@@ -195,13 +195,13 @@ body{
     color: #333333;
     margin: auto auto -22px auto;
     padding: 10px 0px 0px 0px;
-    font-family: OldEnglish;
+    font-family: SignikaReg;
     font-size: 50px;
     letter-spacing: 2px;
 }
 
 #smokeParagraph{
-    font-family: WalbaumReg;
+    font-family: SignikaLight;
     font-size: 20px;
     text-align: center;
     color: #505050;
@@ -214,12 +214,13 @@ body{
     color: #333333;
     margin: -80px auto 0px auto;
     padding: 100px 0px 245px 0px;
-    font-family: OldEnglish;
+    font-family: SignikaReg;
     font-size: 50px;
     letter-spacing: 2px;
 }
 
 #speechParagraph{
+    font-family: SignikaLight;
     font-size: 20px;
     text-align: center;
     color: #505050;
@@ -237,7 +238,7 @@ body{
 
 #bioHead{
     margin: 0 auto;
-    font-family: OldEnglish;
+    font-family: SignikaReg;
     font-size: 2em;
     color: #FFFFFF;
     padding: 80px;
@@ -261,8 +262,7 @@ body{
     height: auto;
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: (100%);
-    filter: grayscale(100%);
+    -webkit-filter: saturation(100%);
     transition: 0.5s;
 }
 
@@ -278,7 +278,7 @@ body{
 
 .infoContainer h3{
     font-size: 1.5em;
-    font-family: OratorStd;
+    font-family: SignikaReg;
     color: #8CC63F;
     text-align: LEFT;
     margin: 0px 10px 0px 18px;
@@ -286,7 +286,7 @@ body{
 }
 
 .infoContainer p{
-    font-family: WalbaumReg;
+    font-family: SignikaLight;
     font-size: 1.1em;  
     color: #F0F0F0;
     text-align: justify;
@@ -295,7 +295,7 @@ body{
 }
 
 #footer{
-    font-family: OratorStd;
+    font-family: SignikaLight;
     font-size: 17px;
     width: 100%;
     padding: 10px 0px 10px 0px;
