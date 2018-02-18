@@ -1,5 +1,7 @@
 body{
-    background-color: #fffc8d;
+    background-color: #F0F0F0;
+    background-image: url(../images/Paper-Tecture.jpg);
+    background-size: contain;
     margin: 0px;
 }
 
@@ -18,23 +20,12 @@ body{
     src: url(fonts/Signika-Light.ttf);
 }
 
-@font-face{
-    font-family: Arciform;
-    src: url(fonts/Arciform.otf);
-}
-
-@font-face{
-    font-family: Bavro;
-    src: url(fonts/Bavro-Regular.ttf);
-}
-
 #navbar{
-    position: static;
+    position: absolute;
     overflow: hidden;
     width:100%;
     height: auto;
     padding: 10px 0px 10px 0px;
-    background-color: #2b5a7c;
 }
 
 #design{
@@ -48,10 +39,9 @@ body{
     margin: 0px 0px 0px 20px;
 }
 
-
 #navbar a{    
     float: right;
-    color: #fffc8d;
+    color: #FFFFFF;
     font-family: SignikaLight;
     text-decoration: none;
     font-size: 1.2em;
@@ -61,9 +51,9 @@ body{
 }
 
 #navbar a:hover{
-    color: #fffb71;
+    color: #fffc8d;
     font-size: 1.24em;
-    text-shadow: 0px 5px 20px #202020;
+    text-shadow: 0px 3px 12px #303030;
 }
 
 #navbar a:not(#Cleanliness):not(#NoiseManagement):not(#SmokePollution):not(#About){
@@ -79,13 +69,15 @@ body{
 }
 
 #header{
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: #2b5a7c;
+    background-color: #1c2727;
+    background-image: url(../images/Fun-Header.png), url(../images/Leather-Texture.png);
+    background-size: contain, contain;
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
     width: auto;
     height: 688px;
-    margin: 0 auto;
+    margin: 0px auto;
+    box-shadow: 0px 5px 50px #505050;
 }
 
 #cleanliness{
@@ -96,7 +88,9 @@ body{
 
 #cleanlinessHeader{
     width: 100%;
-    color: #333333;
+    color: #fffc8d;
+    -webkit-text-stroke: 0.5px #333333;
+    text-stroke: 0.5px #333333;
     margin: auto auto -45px auto;
     padding: 100px 0px 20px 0px;
     font-family: SignikaReg;
@@ -111,14 +105,12 @@ body{
 }
 
 #trashHeader h3, #linisHeader h3{
-    font-size: 22px;
+    font-size: 20px;
     font-family: SignikaLight;
-    color: #333333;
+    color: #00706d;
     text-align: left;
-    text-transform: lowercase;
     width: 80%;
-    margin: auto;
-    padding: 0px 0px 0px 0px;
+    margin: 20px auto;
 }
 
 #trashParagraph, #linisParagraph{
@@ -127,7 +119,7 @@ body{
     text-align: justify;
     width: 80%;
     margin: -15px auto 10px auto;
-    color: #505050;
+    color: #333333;
 }
 
 #trashIMG, #linisIMG {
@@ -140,22 +132,16 @@ body{
 }
 
 #trashIMG .imgContainer img, #linisIMG .imgContainer img{
-    width: 100%;
+    width: 95%;
     height: auto;
-    //-webkit-filter: grayscale(100%);
-    //filter: grayscale(100%);
     transition-duration: 0.5s;
     border-radius: 10px;
+    border: solid 4px #00706d;
 }
 
 #trashIMG .imgContainer img:hover, #linisIMG .imgContainer img:hover{
-    width: 100%;
     height: auto;
-    box-shadow: 0px 10px 20px #A0A0A0;
-    -webkit-filter: none;
-    filter: none;
     box-shadow: 0px 20px 50px #909090;
-    opacity: 1;
 }
 
 #noise{
@@ -166,7 +152,9 @@ body{
 
 #noiseHeader{
     width: 100%;
-    color: #333333;
+    color: #fffc8d;
+    -webkit-text-stroke: 0.5px #333333;
+    text-stroke: 0.5px #333333;
     margin: auto auto -20px auto;
     padding: 0px 0px 0px 0px;
     font-family: SignikaReg;
@@ -178,7 +166,7 @@ body{
     font-family: SignikaLight;
     font-size: 20px;
     text-align: center;
-    color: #505050;
+    color: #00706d;
     width: 80%;
     margin: auto;
 }
@@ -191,7 +179,9 @@ body{
 
 #smokeHeader{
     width: 100%;
-    color: #333333;
+    color: #fffc8d;
+    -webkit-text-stroke: 0.5px #333333;
+    text-stroke: 0.5px #333333;
     margin: auto auto -22px auto;
     padding: 10px 0px 0px 0px;
     font-family: SignikaReg;
@@ -203,14 +193,16 @@ body{
     font-family: SignikaLight;
     font-size: 20px;
     text-align: center;
-    color: #505050;
+    color: #00706d;
     width: 80%;
     margin: 30px auto 30px auto;
 }
 
 #speechHeader{
     width: 80%;
-    color: #333333;
+    color: #fffc8d;
+    -webkit-text-stroke: 0.5px #333333;
+    text-stroke: 0.5px #333333;
     margin: -80px auto 0px auto;
     padding: 100px 0px 245px 0px;
     font-family: SignikaReg;
@@ -222,7 +214,7 @@ body{
     font-family: SignikaLight;
     font-size: 20px;
     text-align: center;
-    color: #505050;
+    color: #00706d;
     width: 65%;
     margin: -280px auto 300px auto;
     padding: 0px 0px 0px 0px;
@@ -232,7 +224,10 @@ body{
     width: 100%;
     margin: 200px auto auto auto;
     text-align: center;
-    background-color: #2b5a7c;
+    background-size: center;
+    background-color: #1c2727;
+    background-image: url(../images/Leather-Texture.png);
+    box-shadow: 0px -5px 50px #505050;
 }
 
 #bioHead{
@@ -261,18 +256,6 @@ body{
     height: auto;
     margin: 0px;
     border-radius: 100%;
-    //-webkit-filter: invert(100%);
-    transition: 10s;
-}
-
-.infoContainer .imgContainer img:hover{
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    border-radius: 100%;
-    -webkit-filter: invert(100%);
-    //filter: none;
-    box-shadow: 0px 2px 15px #202020;
 }
 
 .infoContainer h3{
@@ -280,7 +263,7 @@ body{
     font-family: SignikaReg;
     color: #fffc8d;
     text-align: LEFT;
-    margin: 0px 10px 0px 18px;
+    margin: 0px 10px 0px 38px;
     grid-area: 2 / 2 / span 1 / span 1;
 }
 
@@ -289,7 +272,7 @@ body{
     font-size: 1.1em;  
     color: #F0F0F0;
     text-align: justify;
-    margin: 10px 10px 10px 20px;
+    margin: 10px 10px 10px 40px;
     grid-area: 3 / 2 / span 1 / span 1;
 }
 
@@ -298,7 +281,7 @@ body{
     font-size: 17px;
     width: 100%;
     padding: 10px 0px 10px 0px;
-    background-color: #3b76a0;
+    background-color: #1b5454;
     text-align: center;
-    color: #FFFFFF;
+    color: #fffc8d;
 }
