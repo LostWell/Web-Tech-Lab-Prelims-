@@ -1,5 +1,5 @@
 body{
-    background-image: url("../images/back2.jpeg");
+    background-image: url("../images/background2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -69,12 +69,25 @@ div.navi {
     text-align: center;
     top: 1%;
 }
+
+@font-face {
+    font-family: midnight;
+    src: url(../FONTS/Midnight.ttf);
+    }
+
 div.navi a {
     color: rgba(150,0,150,1.0);
-	font-family: Aharoni;
-	font-size: 25px;
 	text-decoration: none;
     transition: ease-in-out 0.3s;
+     font-family: 
+    "midnight";
+    text-transform: lowercase;
+    font-size: 30px;
+}
+p {
+   
+  
+	
 }
 div.navi a:hover {
 	opacity: 1.0;

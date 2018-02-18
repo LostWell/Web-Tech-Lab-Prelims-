@@ -1,35 +1,62 @@
 body{
-    background-color: #000000;
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 div{
-    border: groove;
     background: #777777;
     line-height: 1.6;
 }
 div h1{
     text-align: center;
+    font-family: "midnight";
+    text-transform: lowercase;
+    font-size: 70px;
 }
 
 div h2{
+    border: hidden;
+    border-radius: 20px;
     background-color: #555555;
     padding-left: 3%;
+    font-family: "midnight";
+    text-transform: lowercase;
+    font-size: 40px;
 }
 
 div.footer{
     border: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
     margin-left: 18%;
     margin-right: 18%;
     text-align: center;
 }
 
 div.header{
+    border-style: solid;
+    border-color: #00A080;
     margin-left: 12%;
     margin-right: 12%;
     margin-top: 1%;
 }
 
+div.imgContainer img{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+div.infoContainer p{
+    background-color: #AAAAAA;
+}
+
 div.main{
+    border-radius: 25px;
+    border-style: solid;
     margin-top: 2%;
     margin-left: 18%;
     margin-right: 18%;
@@ -38,22 +65,55 @@ div.main{
     z-index: -1;
 }
 div.navi {
-    margin-left: 15%;
-    margin-right: 15%;
+    background-color: rgba(150,150,150,1.0);
+    border: dashed;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: sticky;
+    margin-left: 13%;
+    margin-right: 13%;
     text-align: center;
     top: 1%;
 }
+
+@font-face {
+    font-family: midnight;
+    src: url(../FONTS/Midnight.ttf);
+    }
+
 div.navi a {
-	font-size: 25px;
+    color: rgba(150,0,150,1.0);
 	text-decoration: none;
-    transition: ease-out 0.3s;
+    transition: ease-in-out 0.3s;
+    font-family: "midnight";
+    text-transform: lowercase;
+    font-size: 30px;
+}
+p {
+   
+  
+	
 }
 div.navi a:hover {
-	background-color: #555555;
-    color: #FFFFFF;
+	opacity: 1.0;
+	color: #FFFFFF;
+	background-color: rgba(150,0,150,1.0);
+    border: groove;
     text-decoration: underline;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+div.pics img{
+    height: auto;
+    width: 35%;
+    transition: ease-in-out 0.3s;
+}
+div.pics img:hover{
+    height: auto;
+    width: 95%;
+    border: double;
+    border-color: #000000;
 }
 
 footer{
@@ -62,7 +122,7 @@ footer{
 
 footer a{
     text-decoration: none;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.3s;
 }
 footer a:hover{
     background-color: #0000FF;
@@ -71,17 +131,6 @@ footer a:hover{
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: underline;
-}
-
-hr{
-    border: double;
-    border-color: #000000;
-    width: 90%;
-}
-
-img{
-    height: auto;
-    width: 95%;
 }
 
 ul{
@@ -94,11 +143,6 @@ p{
     text-align: justify;
 }
 
-#aBios{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 #aPics{
     margin-left: 5%;
     margin-right: 5%;
@@ -108,7 +152,7 @@ p{
     margin-left: 5%;
     margin-right: 5%;
 }
-#aLaws{
+#aTop{
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -122,18 +166,20 @@ p{
     height: auto;
 }
 
+#divide{
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px #666666;
+    text-align: center;
+}
+
+h3{
+    font-family: "midnight";
+    text-transform: lowercase;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
 .pic li{
     list-style: none;
-}
-
-.pics{
-    border-color: #000000;
-}
-
-.tips{
-    border-color: #000000;
-}
-
-.laws{
-    border-color: #000000;
 }
